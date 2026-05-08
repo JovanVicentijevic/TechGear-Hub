@@ -1,0 +1,16 @@
+{
+  "heroImages": [
+    "assets/img/first.jpg",
+    "assets/img/second.jpg",
+    "assets/img/third.jpg"
+  ],
+  "specialOffer": {
+    "src": "../assets/img/setup.jpg",
+    "alt": "Premium Tech Gear"
+  },
+  "categories": [
+    { "id": "cat-keyboards", "src": "assets/img/steelseries.jpg" },
+    { "id": "cat-mice", "src": "assets/img/logitech.jpg" },
+    { "id": "cat-audio", "src": "assets/img/sony.jpg" }
+  ]
+}

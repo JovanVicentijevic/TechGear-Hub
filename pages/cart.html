@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechGear Hub is your ultimate online store for premium gaming gear and professional 
+    tech equipment. Discover top-quality technology to enhance your work and play.">
+    <meta name="keywords" content="tech gear, gaming equipment, professional tech, PC accessories, electronics,
+     tech shop, gaming mouse, mechanical keyboards, TechGear Hub">
+    <title>TechGear Hub | Your Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black py-3">
+    <div class="container">
+        <a class="navbar-brand fs-4" href="../index.html">TechGear Hub</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto small text-uppercase text-center" id="nvb"></ul>
+        </div>
+    </div>
+</nav>
+
+   <div class="container my-5" id="cart-page-wrapper">
+    
+    <div id="cart-view">
+        <h2 class="mb-4 fw-bold text-dark">Your Cart</h2>
+        
+        <div class="row g-4">
+            <div class="col-lg-8">
+                <div class="cart-panel text-center py-5">
+                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#4a4a4a" stroke-width="2" 
+                    stroke-linecap="round" stroke-linejoin="round" class="mb-3">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    
+                    <p class="text-muted mb-4">Your cart is currently empty.</p>
+                    <a href="shop.html" class="text-dark text-decoration-none border-bottom border-dark pb-1">Return to shop</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="cart-panel">
+                    <h4 class="fw-bold mb-4">Order Summary</h4>
+                    
+                    <div class="d-flex justify-content-between mb-3 text-muted">
+                        <span>Total items:</span>
+                        <span id="summary-count">0</span>
+                    </div>
+                    
+                    <hr class="text-muted my-4">
+                    
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <span class="fw-bold text-dark">Total price:</span>
+                        <span class="fw-bold fs-5">$0.00</span>
+                    </div>
+                    
+                    <button class="btn btn-cart-dark w-100 mb-3" onclick="showCheckoutForm()">Proceed to Checkout</button>
+                    <button class="btn btn-cart-clear w-100" onclick="clearCart()">Clear Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+
+     <footer class="bg-black text-white pt-5 pb-4 mt-5">
+    <div class="container"> 
+        <div class="row text-start">
+            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 fw-bold text-teal">TechGear Hub</h5>
+                <p class="small text-light opacity-75 footer-desc-text">
+                    Premium gear for gamers and professionals. Our goal is to provide you with the best technology that
+                     will enhance your work and play. Become a legend with TechGear.
+                </p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 fw-bold">Navigation</h6>
+                <p><a href="../index.html" class="text-light text-decoration-none small hover-teal">Home</a></p>
+                <p><a href="shop.html" class="text-light text-decoration-none small hover-teal">Store</a></p>
+                <p><a href="pages/author.html" class="text-light text-decoration-none small hover-teal">Author</a></p>
+                <p><a href="documentation.html" class="text-light text-decoration-none small hover-teal">Documentation</a></p>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 fw-bold">Contact</h6>
+                <p class="small text-light opacity-75"><i class="fas fa-home me-2 text-teal"></i> 16 Zdravka Celara, Belgrade</p>
+                <p class="small text-light opacity-75"><i class="fas fa-envelope me-2 text-teal"></i> support@techgear.com</p>
+                <p class="small text-light opacity-75"><i class="fas fa-phone me-2 text-teal"></i> +381 11 123 456</p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 fw-bold">Follow Us</h6>
+                <div class="d-flex gap-3">
+                    <a href="https://www.facebook.com/" class="text-light fs-5 hover-teal"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/?hl=en" class="text-light fs-5 hover-teal"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/i/" class="text-light fs-5 hover-teal"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="mb-4 mt-5 border-light opacity-25">
+        
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="small text-light opacity-50">&copy; 2026 TechGear Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+ <button type="button" id="backToTop" class="btn-back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        // Pokrećemo prikaz korpe čim se stranica učita
+        $(document).ready(function() {
+            displayCart();
+        });
+    </script>
+</body>
+</html>
